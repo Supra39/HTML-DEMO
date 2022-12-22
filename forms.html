@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forumlär</title>
+</head>
+<body>
+    <h1>Formulär</h1>
+
+<!-- ctrl + ' för att kommentera ut en rad, igen för att ta bort kommentar -->
+    <form>
+
+        <fieldset><!--Gör en ruta runt texten i fieldset  bodyn-->
+        <legend>Personlig information:</legend><!--Ger en "Titel" till fieldset-->
+
+        <label for="name">Ditt namn:</label> <!--En ettikett for textruta, om du trycker på ettiketten så sätts din kursor i textrutan-->
+        <br>
+        <input type="text" name="name" id="name" placeholder="Skriv namn....."> <!--en mindre textruta, för att skriva något kort, med placeholder taggen kan du lägga till bakgrounds text i textrutan som går bort när du börjar skriva-->
+
+        <br><br>
+
+        <label for="email">Din E-post:</label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="Ange din E-post...." required><!--"required" gör att fältet måste fyllas i-->
+        <br>
+        <label for="customer-status">Kundstatus:</label>
+        <br>
+        <select name="customer-status" id="customer-status"><!--En lista man får välja ifrån-->
+            <option value="" disabled selected>Ange din status</option>
+            <option value="is-customer">Ja är Kund</option>
+            <option value="not-customer">Nej, jag är inte kund</option>
+        </select>
+        </fieldset><!--slut på rutfält-->
+        <br><br>
+
+        <input type="checkbox" name="volvo" id="volvo" value="volvo"><!--Checklist (du kan välja fler alternativ)-->
+        <label for="volvo">Jag kör Volvo</label>
+        <br>
+        <input type="checkbox" name="Saab" id="Saab" value="saab">
+        <label for="saab">Jag kör Saab</label>
+        <br>
+        <input type="checkbox" name="BMW" id="BMW" value="bmw">
+        <label for="bmw">Jag kör BMW 🏎</label>
+        <br><br>
+
+        <input type="radio" name="car" id="bmw" value="bmw">
+        <label for="bmw">Jag kör BMW</label>
+        <br>
+        <input type="radio" name="car" id="saab" value="saab">
+        <label for="saab">Jag kör Saab</label>
+        <br>
+        <input type="radio" name="car" id="volvo" value="volvo">
+        <label for="volvo">Jag kör volvo</label>
+
+        <br><br>
+        
+        <input type="week" name="date" id="date">
+
+        <br><br>
+        <input type="color" name="color" id="color">
+        <br><br>
+        <input type="range" name="range" id="range">
+        <br><br>
+
+        <input type="file" name="file" id="file">
+        <br><br>
+        <input type="password" name="pw" id="pw">
+        <br><br>
+        
+
+        <label for="message">Ditt meddelande:</label>
+        <br>
+        <textarea name="message" cols="30" rows="10" placeholder="Skriv ditt meddelande här..."></textarea><!--en större textruta-->
+        <br>
+        <input type="submit" value="Skicka meddelandet"><!--en knapp som skickar/sparar det som skrevs in i textrutan-->
+    </form>
+
+
+<br>
+<a href="forms.html">F4</a>
+</body>
+</html>
